@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Saskaitos</h1>
+  <p>Mūsų saskaitu sąrašas.</p>
+  {% for s in saskaitos %}
+    <li>{{s.date_of_issue}} Summa: {{s.ammount_of_money}}</li>
+    {% endfor %}
+{% endblock %}

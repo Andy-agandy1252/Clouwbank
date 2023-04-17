@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Klijentai</h1>
+  <p>Mūsų Klijentu sąrašas.</p>
+  {% for k in klijentai %}
+    <li>{{k.klient_name}} {{k.klient_last_name}}</li>
+    {% endfor %}
+{% endblock %}

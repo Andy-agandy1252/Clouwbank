@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Projektai</h1>
+  <p>Mūsų projektu sąrašas.</p>
+  {% for p in projektai %}
+    <li><a href="{% url 'projektas' p.id %}">{{p.name}} </a></li>
+    {% endfor %}
+{% endblock %}

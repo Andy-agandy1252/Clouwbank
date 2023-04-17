@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Darbuotojai</h1>
+  <p>Mūsų darbuotoju sąrašas.</p>
+  {% for d in darbuotojai %}
+    <li>{{d.worker_name}} {{d.worker_last_name}}</li>
+    {% endfor %}
+{% endblock %}

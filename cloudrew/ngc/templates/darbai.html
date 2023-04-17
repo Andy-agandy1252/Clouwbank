@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Darbai</h1>
+  <p>Mūsų darbu sąrašas.</p>
+  {% for d in darbai %}
+    <li>{{d.job_name}}</li>
+    {% endfor %}
+{% endblock %}

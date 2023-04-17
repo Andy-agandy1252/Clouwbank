@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Djangocloud</h1>
+  <p>Mes turime:</p>
+  <ul>
+    <li><strong>Projektu:</strong> {{ num_projects }}</li>
+    <li><strong>Klientu:</strong> {{ num_klients }}</li>
+    <li><strong>Darbuotoju:</strong> {{ num_workers }}</li>
+    <li><strong>Darbu:</strong> {{ num_jobs }}</li>
+    <li><strong>Saskaitu:</strong> {{ num_accounts }}</li>
+  </ul>
+{% endblock %}
