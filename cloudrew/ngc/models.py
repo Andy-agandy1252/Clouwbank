@@ -37,13 +37,13 @@ class Projektas(models.Model):
     display_klient.short_description = 'Klientai'
     def display_worker(self):
         return f'{self.workers.worker_name}  {self.workers.worker_last_name}' if self.workers else ""
-    display_klient.short_description = 'Darbotojai'
+    display_worker.short_description = 'Darbotojai'
     def display_job(self):
         return f'{self.job.job_name}' if self.job else ""
-    display_klient.short_description = 'Darbas'
+    display_job.short_description = 'Darbas'
     def display_account(self):
         return f'{self.accounts.ammount_of_money}' if self.accounts else ""
-    display_klient.short_description = 'Saskaitahhhhh'
+    display_account.short_description = 'Saskaitahhhhh'
 
 
 
